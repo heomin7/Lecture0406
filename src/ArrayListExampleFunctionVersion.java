@@ -34,16 +34,14 @@ public class ArrayListExampleFunctionVersion {
             sum += e.length();
         }
 
-        double average = sum/(double)wordList.size();
-
-        return average;
+        return sum/(double)wordList.size();
     }
 
     public static List<String> Under5WordListMaker(List<String> wordlist){
+
         List<String> under5character= new ArrayList<>();
 
         for(String e: wordlist){
-            System.out.println(e);
             if(e.length() <= 5) under5character.add(e);
         }
 
